@@ -1,14 +1,13 @@
 package com.samseen.ecommerce.security.auth;
 
-import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.samseen.ecommerce.enums.Role;
 import com.samseen.ecommerce.security.CustomUserDetailsService;
 import com.samseen.ecommerce.security.JWTService;
 import com.samseen.ecommerce.token.entity.Token;
 import com.samseen.ecommerce.token.entity.TokenType;
-import com.samseen.ecommerce.token.repositories.RoleRepository;
-import com.samseen.ecommerce.token.repositories.TokenRepository;
+import com.samseen.ecommerce.token.repository.RoleRepository;
+import com.samseen.ecommerce.token.repository.TokenRepository;
 import com.samseen.ecommerce.user.User;
 import com.samseen.ecommerce.user.UserRepository;
 import com.samseen.ecommerce.user.entity.Permission;
@@ -17,7 +16,6 @@ import jakarta.servlet.http.HttpServletResponse;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.http.HttpHeaders;
-import org.springframework.http.ResponseEntity;
 import org.springframework.security.authentication.AuthenticationManager;
 import org.springframework.security.authentication.UsernamePasswordAuthenticationToken;
 import org.springframework.security.core.userdetails.UserDetails;

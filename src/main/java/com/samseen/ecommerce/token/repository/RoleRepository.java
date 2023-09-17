@@ -1,4 +1,4 @@
-package com.samseen.ecommerce.token.repositories;
+package com.samseen.ecommerce.token.repository;
 
 import com.samseen.ecommerce.user.entity.Permission;
 import org.springframework.data.jpa.repository.JpaRepository;

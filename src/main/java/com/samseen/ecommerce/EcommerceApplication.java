@@ -3,7 +3,7 @@ package com.samseen.ecommerce;
 import com.samseen.ecommerce.enums.Category;
 import com.samseen.ecommerce.product.model.Product;
 import com.samseen.ecommerce.product.repository.ProductRepository;
-import com.samseen.ecommerce.token.repositories.RoleRepository;
+import com.samseen.ecommerce.token.repository.RoleRepository;
 import com.samseen.ecommerce.user.entity.Permission;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
