@@ -2,6 +2,7 @@ package com.samseen.ecommerce.user;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.samseen.ecommerce.enums.Role;
+import com.samseen.ecommerce.product.model.Order;
 import com.samseen.ecommerce.token.entity.Token;
 import com.samseen.ecommerce.user.entity.Permission;
 import jakarta.persistence.*;

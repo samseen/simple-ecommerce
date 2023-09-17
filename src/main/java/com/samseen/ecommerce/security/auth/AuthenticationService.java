@@ -30,7 +30,6 @@ import java.util.Set;
 
 @Service
 @RequiredArgsConstructor
-@JsonInclude(JsonInclude.Include.NON_NULL)
 @Slf4j
 public class AuthenticationService {
     private final UserRepository userRepository;
