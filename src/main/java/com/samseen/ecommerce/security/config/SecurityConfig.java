@@ -29,6 +29,8 @@ public class SecurityConfig {
             "/swagger-ui.html",
             "swagger-ui.html",
             "webjars/**",
+            "/configuration/ui",
+            "/configuration/security",
             // -- Swagger UI v3
             "/v3/api-docs/**",
             "v3/api-docs/**",
@@ -45,9 +47,9 @@ public class SecurityConfig {
     public SecurityFilterChain securityFilterChain(HttpSecurity http) throws Exception {
         http
                 .csrf(AbstractHttpConfigurer::disable)
-                .authorizeHttpRequests( auth -> auth.anyRequest().permitAll()
-//                        .requestMatchers(AUTH_WHITELIST).permitAll()
-//                        .anyRequest().authenticated()
+                .authorizeHttpRequests( (auth) -> auth
+                        .requestMatchers(AUTH_WHITELIST).permitAll()
+                        .anyRequest().authenticated()
                 )
                 .sessionManagement(session -> session.sessionCreationPolicy(SessionCreationPolicy.STATELESS))
 //                .httpBasic(withDefaults())
